@@ -12,7 +12,7 @@
         <link rel="canonical" href="http://127.0.0.1:8000/v3/search-parts/templating/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.2.4">
     
     
       
@@ -259,22 +259,6 @@
   
 
       
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../" class="md-tabs__link">
-        Version 3
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -373,6 +357,18 @@
     <li class="md-nav__item">
       <a href="../../../scenarios/" class="md-nav__link">
         Scenario tutorials
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../create-custom-layouts/" class="md-nav__link">
+        Create custom layouts
       </a>
     </li>
   
@@ -773,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../extensibility/custom_data_source.md" class="md-nav__link">
+      <a href="../../../extensibility/custom_data_sources/" class="md-nav__link">
         Custom data sources
       </a>
     </li>
@@ -787,48 +783,6 @@
     <li class="md-nav__item">
       <a href="../../../extensibility/custom_query_modifications/" class="md-nav__link">
         Custom query modifier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      <label class="md-nav__link" for="__nav_7">
-        Version 3
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Version 3" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Version 3
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
-        Documentation
       </a>
     </li>
   
@@ -1280,7 +1234,7 @@ Item properties and all Handlebars helpers are available inside the partial bloc
 <a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>{{/each}}
 </code></pre></div>
 <h3 id="styling">Styling<a class="headerlink" href="#styling" title="Permanent link">&para;</a></h3>
-<p>You can write your own CSS styles inside templates. However, all CSS rules (including <code>@media</code> rules) will be prefixed automatically by an unique ID according to the follwoing pattern (<strong>pnp-modern-search-template_\&lt;Web Part instance ID></strong>) to make sure styles are isolated from other Web Parts on the page.</p>
+<p>You can write your own CSS styles inside templates. However, all CSS rules (including <code>@media</code> rules) will be prefixed automatically by an unique ID according to the follwoing pattern (<strong>pnp-modern-search-template_\&lt;Web Part instance ID&gt;</strong>) to make sure styles are isolated from other Web Parts on the page.</p>
 <h4 id="sanitized-html">Sanitized HTML<a class="headerlink" href="#sanitized-html" title="Permanent link">&para;</a></h4>
 <p>The HTML is sanitized automatically preventing XSS attacks using <a href="https://github.com/cure53/DOMPurify"><code>DOMPurify</code></a>. It means for instance, you cannot add your own <code>&lt;script&gt;</code> tags or inline JavaScript.</p>
 <h3 id="handlebars-helpers">Handlebars helpers<a class="headerlink" href="#handlebars-helpers" title="Permanent link">&para;</a></h3>

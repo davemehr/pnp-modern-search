@@ -12,7 +12,7 @@
         <link rel="canonical" href="http://127.0.0.1:8000/usage/search-results/layouts/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-7.2.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.2.4">
     
     
       
@@ -261,22 +261,6 @@
   
 
       
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../../v3/" class="md-tabs__link">
-        Version 3
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -375,6 +359,18 @@
     <li class="md-nav__item">
       <a href="../../../scenarios/" class="md-nav__link">
         Scenario tutorials
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../create-custom-layouts/" class="md-nav__link">
+        Create custom layouts
       </a>
     </li>
   
@@ -914,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../extensibility/custom_data_source.md" class="md-nav__link">
+      <a href="../../../extensibility/custom_data_sources/" class="md-nav__link">
         Custom data sources
       </a>
     </li>
@@ -928,48 +924,6 @@
     <li class="md-nav__item">
       <a href="../../../extensibility/custom_query_modifications/" class="md-nav__link">
         Custom query modifier
-      </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
-      
-      <label class="md-nav__link" for="__nav_7">
-        Version 3
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Version 3" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Version 3
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../v3/" class="md-nav__link">
-        Documentation
       </a>
     </li>
   
@@ -1302,6 +1256,11 @@
 <td></td>
 </tr>
 <tr>
+<td><strong>Show persona card on hover (LPC)</strong></td>
+<td>If enabled, show a person card on hover for the curren item using the native SharePoint implementation.</td>
+<td></td>
+</tr>
+<tr>
 <td><strong>Show persona card on hover</strong></td>
 <td>If enabled, show a person card on hover for the current item. <p align="center"><a href="../../../assets/webparts/search-results/layouts/persona_card_hover.png"><img alt="&quot;Persona card hover&quot;" src="../../../assets/webparts/search-results/layouts/persona_card_hover.png" /></a></p> This feature uses Microsoft Graph and <a href="https://docs.microsoft.com/en-us/graph/toolkit/components/person">Microsoft Graph Toolkit</a> to display information about the user and needs the following API permissions in your tenant to work: <ul><li>User.Read</li><li>People.Read</li><li>Contacts.Read</li><li>User.Read.All</li></ul><strong>If these permissions are not set, the card won't appear</strong>. You can use <a href="https://pnp.github.io/office365-cli/cmd/spo/serviceprincipal/serviceprincipal-grant-add/">PnP Office 365 CLI</a> to add correct permissions for this feature:</br></br><code>$m365 spo serviceprincipal grant add --resource '&lt;aad_app_display_name&gt;' --scope 'user_impersonation'</code>. Refer to the section below about <a href="#persona-hover-card">persona hover card customization</a>.</td>
 <td></td>
@@ -1362,7 +1321,7 @@ More information <a href="https://docs.microsoft.com/en-us/graph/toolkit/compone
 </code></pre></div>
 <h3 id="custom">Custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h3>
 <p>The 'Custom' layout is a minimal layout to start with if you want to create your own customized UI from scratch.</p>
-<p>You can also start from an existing layout by first selecting it, and then click <code>{}</code> next to the <em>Edit results tempalte</em> field. This will copy the selected template and allow you to make modifications as needed.</p>
+<p>You can also start from an existing layout by first selecting it, and then click <code>{}</code> next to the <em>Edit results template</em> field. This will copy the selected template and allow you to make modifications as needed.</p>
 <p><img alt="&quot;Custom layout&quot;" class="center" src="../../../assets/webparts/search-results/layouts/custom_layout.png" /> </p>
 <blockquote>
 <p>Updating a builtin layout (ex: 'Cards', 'Detail List', etc.) will automatically switch the selected layout to 'Custom' with your modifications as content. <strong>All previous custom layout content will be overwritten</strong>.</p>
