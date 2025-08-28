@@ -1,5 +1,5 @@
 
-# Scenario 1: Create a simple search page
+# Create a simple search page
 
 !!! note
     The PnP Modern Search Web Parts must be deployed to your App Catalog and activated on your site. See the [installation documentation](../installation.md) for details.
